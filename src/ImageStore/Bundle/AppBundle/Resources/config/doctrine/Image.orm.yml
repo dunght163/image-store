@@ -1,0 +1,31 @@
+ImageStore\Bundle\AppBundle\Entity\Image:
+    type: entity
+    table: null
+    repositoryClass: ImageStore\Bundle\AppBundle\Repository\ImageRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        path:
+            type: string
+            length: 255
+        size:
+            type: string
+            length: '50'
+        type:
+            type: string
+            length: '50'
+        createdAt:
+            type: datetime
+            column: created_at
+    manyToOne:
+        userId:
+            targetEntity: ImageStore\Bundle\UserBundle\Entity\User
+            inversedBy: images
+    lifecycleCallbacks: {  }

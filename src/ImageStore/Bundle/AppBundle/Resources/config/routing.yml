@@ -1,0 +1,11 @@
+image_store_app_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: ImageStoreAppBundle:Default:index }
+
+image_store_app_manager_images:
+    path:     /manager/images
+    defaults: { _controller: ImageStoreAppBundle:AppController:get }
+
+image_store_app_manager_images_all:
+    path:     /manager/images/all
+    defaults: { _controller: ImageStoreAppBundle:AppController:cgetAll }

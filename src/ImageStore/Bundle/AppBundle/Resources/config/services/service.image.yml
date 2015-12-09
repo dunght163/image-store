@@ -1,0 +1,5 @@
+services:
+    image_store_app.repository.image:
+        class: ImageStore\Bundle\AppBundle\Repository\ImageRepository
+        arguments:
+            - @doctrine.orm.entity_manager

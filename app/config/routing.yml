@@ -1,3 +1,8 @@
+# appBundle
+image_store_app:
+    resource: "@ImageStoreAppBundle/Resources/config/routing.yml"
+    prefix:   /
+
 # default
 app:
     resource: "@AppBundle/Controller/"

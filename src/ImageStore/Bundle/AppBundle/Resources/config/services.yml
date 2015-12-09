@@ -1,0 +1,4 @@
+services:
+#    image_store_app.example:
+#        class: ImageStore\Bundle\AppBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
