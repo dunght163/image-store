@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new FOS\UserBundle\FOSUserBundle(),
             new Rollerworks\Bundle\MultiUserBundle\RollerworksMultiUserBundle(),
             new ImageStore\Bundle\UserBundle\ImageStoreUserBundle(),
+            new ImageStore\Bundle\UserSystem\AdminBundle\ImageStoreUserSystemAdminBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {
